@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+nav {
+  width: 100vw;
+  padding: 20px 0;
+}
+
+.container {
+  width: 100vw;
+  max-width: 600px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fl-bt {
+  justify-content: space-between;
+}
+
+.full {
+  width: 100%;
+}
+
+.column {
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  background-color: #3c3c3c;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.tab div {
+  background-color: #3c3c3c2a;
+  padding: 10px 0;
+  user-select: none;
+}
+
+.tab div:hover {
+  background-color: #3c3c3c6b;
+}
+.target{
+  background-color: #3c3c3c6b !important
+}
+ion-icon {
+  color: #3c3c3c;
+  font-size: 20px;
+}
+
+.task {
+  padding: 15px 0;
+}
+
+.task ion-icon {
+  margin-right: 5px;
+  user-select: none;
+}
+
+.view:hover {
+  text-decoration: underline;
+}
+
+.handle-mouse:hover {
+  text-decoration: line-through;
+}
+.line{
+  text-decoration: line-through !important;
+  color: #3c3c3c9c;
+}
+
+.summury {
+  padding: 20px 0;
+  position: sticky;
+  bottom: 0;
+  background-color: white;
+}
+
+.summury .container {
+  padding: 20px 0;
+  border-top: 1px solid rgb(224, 224, 224);
+}
+
+.modal-container {
+  background-color: #3c3c3c7a;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+
+}
+
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 99vw;
+  max-width: 400px;
+  z-index: 100;
+  position: relative;
+}
+
+.modal ion-icon {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+}
+
+.created {
+  font-size: smaller;
+  color: #3c3c3c94;
+  margin-bottom: 10px;
+}
+
+.modal div {
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.modal label {
+  margin-bottom: 5px;
+}
+
+.modal input[type=text],
+textarea {
+  border: none;
+  padding: 10px;
+  border: #3c3c3c65 1px solid;
+  border-radius: 5px;
+  width: 100%;
+  resize: none;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=range] {
+  margin: 10px 0;
+}
+
+.form {
+  display: none;
+}
+.update-form {
+  display: none;
+}
+
+.details {
+  position: absolute;
+  align-items: flex-start;
+  display: none;
+
+}
+
+.details-btn {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+}
+
+span {
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  background-color: #3c3c3c83;
+  padding: 3px 5px;
+  border-radius: 3px;
+  border: 1px solid aliceblue;
+}
+
+.description-details {
+  margin: 10px 0;
+}
+
+.details h3 {
+  margin-bottom: 10px;
+}
+
+.delete-btn {
+  background-color: rgba(255, 99, 71, 0.815);
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #e2e2e2;
+  border: 8px solid #3c3c3c;
+  cursor: pointer;
+  border-radius: 50%;
+}
+

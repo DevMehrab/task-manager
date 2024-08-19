@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Task Manager</title>
+</head>
+
+<body>
+  <nav class="flex">
+    <div class="container flex fl-bt">
+      <div class="logo">Task Manager</div>
+      <button class="btn-primary select-btn">Add Task</button>
+    </div>
+  </nav>
+  <section class="flex">
+    <div class="container flex">
+      <div class="tab flex fl-bt full">
+        <div class="flex all target">All</div>
+        <div class="flex active">Active</div>
+        <div class="flex completed">Completed</div>
+      </div>
+    </div>
+  </section>
+  <section class="flex">
+    <div class="container flex column task-container">
+      
+    </div>
+  </section>
+  <section class="flex summury">
+    <div class="container flex fl-bt full">
+      <div class="total-summury">Total: 0</div>
+      <div class="comp-summury">Completed: 0</div>
+      <div class="active-summury">Active: 0</div>
+    </div>
+  </section>
+
+  <section class="modal-container flex">
+    <div class="modal form flex column">
+      <div class="flex column">
+        <label>Title</label>
+        <input type="text" class="title-input" placeholder="Add Title">
+      </div>
+      <div class="flex column">
+        <label>Description</label>
+        <textarea class="description-input" placeholder="Add a description"></textarea>
+      </div>
+      <div class="flex column">
+        <label>Importance</label>
+        <input type="range" min="1" max="3" value="2" class="slider" id="myRange">
+        <label class="flex fl-bt full" style="margin-top: 5px;">
+          <p>Low</p>
+          <p>Medium</p>
+          <p>High</p>
+        </label>
+      </div>
+      <button class="add-task full">Add Task</button>
+    </div>
+
+    <div class="modal details flex column fl-bt">
+      <div>
+        <p class="created">Created: Tue 13 aug 2024</p>
+        <h3 class="title-details">Lorem ipsum dolor <span>High</span></h3>
+        <p class="description-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quae nesciunt
+          provident, enim quisquam accusantium ipsum qui eveniet assumenda. Blanditiis.</p>
+      </div>
+      <aside class="details-btn full">
+        <button class="delete-btn">Delete</button>
+      </aside>
+    </div>
+  </section>
+  
+  <script src="main.js" type="module"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
