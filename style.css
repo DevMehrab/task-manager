@@ -23,6 +23,7 @@ nav {
 .container {
   width: 100vw;
   max-width: 600px;
+  padding: 0 10px;
 }
 
 .flex {
@@ -103,7 +104,7 @@ ion-icon {
 }
 
 .summury {
-  padding: 20px 0;
+  padding: 20px 10px;
   position: sticky;
   bottom: 0;
   background-color: white;
@@ -165,6 +166,11 @@ textarea {
   border-radius: 5px;
   width: 100%;
   resize: none;
+  outline: none;
+}
+.modal input[type=text]:focus,
+textarea:focus {
+  border: 1px solid #3c3c3c;
 }
 
 textarea {
