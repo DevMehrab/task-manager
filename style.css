@@ -130,8 +130,8 @@ ion-icon {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
-  width: 99vw;
-  max-width: 400px;
+  width: 95vw;
+  max-width: 95vw;
   z-index: 100;
   position: relative;
 }
@@ -192,7 +192,6 @@ input[type=range] {
   position: absolute;
   align-items: flex-start;
   display: none;
-
 }
 
 .details-btn {
