@@ -89,9 +89,7 @@ class Task {
     elements.miscellaneous.modal.style.display = 'none';
   }
 
-  // Method to edit a task
-
-  // Method to delete a task
+  
   static deleteTask(id) {
     let arr = this.getTask();
     arr = arr.filter(task => parseInt(task.id) !== parseInt(id));
@@ -133,7 +131,6 @@ class Task {
   }
 }
 
-// Add event listeners after the DOM is loaded
 window.onload = () => {
   Task.displayUI();
 
@@ -165,7 +162,7 @@ window.onload = () => {
     Task.displayUI();
   });
 
-  // Event delegation for handle-mouse elements
+
   elements.miscellaneous.taskContainer.addEventListener('click', (e) => {
     const target = e.target;
     const handleMouseElement = target.closest('.handle-mouse');
